@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiseBox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin%20Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="main_design.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="welcome-container">
+            <div class="title">Welcome to RiseBox!</div>
+            <div class="subtitle">The Compact File Sharer.</div>
+            <div class="title-btn-spacer"></div>
+            <a href="#login-container"><div id="start-btn">
+                <div class="main-txt">Start!</div>
+            </div></a>
+        </div>
+        <div id="login-container">
+            <div class="title">Who are You?</div>
+            <form action="" method="POST">
+                <div id="form-container">
+                    <label name="user-name" class="main-txt">Username</label>
+                    <input type="text" class="form-input">
+                    <div class="form-spacer"></div>
+                    <label name="password" class="main-txt">Password</label>
+                    <input type="password" class="form-input">
+                    <div class="form-spacer"></div>
+                    <a href="#team-container"><div class="form-submit">Confirm</div></a>
+                </div>
+            </form>
+        </div>
+        <div id="team-container">
+            <div class="title">Who are Your Teammates?</div>
+            <form action="" method="POST">
+                <div id="form-container">
+                    <label name="team-mate-1" class="main-txt">Teammates</label>
+                    <input type="text" class="form-input">
+                    <input type="text" class="form-input">
+                    <input type="text" class="form-input">
+                    <input type="text" class="form-input">
+                    <div class="form-spacer"></div>
+                    <a href="#workspace-container"><div class="form-submit">Send Invite</div></a>
+                </div>
+            </form>
+        </div>
+        <div id="workspace-container">
+            <div id="files-box">
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'div'
+        })
+    </script>
+</body>
+</html>
